@@ -1,0 +1,34 @@
+/*
+  Flavorpush
+  Sample Configuration file
+
+  This configuration file should reside in the local directory to the Flavorpush application.  It consists of an unnamed
+  array of objects defining each product flavor that your app supports.
+
+  The fields for each product flavor are:
+
+  name - A key to uniquely identify each product flavor.
+  applicationName - Your application name.  Per Google, this should follow the MyCompany-Application/1.0 format.
+  packageName - The package name for the product flavor.
+  serviceAccountEmail - The service acccount email address configured for your developer account.  (NOTE: Flavorpush
+  does not support Installed application authentication at this time.)
+  keyFile - The path to your service account key file.  You can use just the file name if it is in the local directory.
+
+  Remove this comment before running Flavorpush as JSON standard does not support comments.
+*/
+[
+  {
+    "name": "productFlavor1",
+    "applicationName": "MyCompany-ProductFlavor1Name/1.0",
+    "packageName": "com.yourpackage.productFlavor1",
+    "serviceAccountEmail": "youraccount1@developer.gserviceaccount.com",
+    "keyFile": "productFlavor1.p12"
+  },
+  {
+    "name": "productFlavor2",
+    "applicationName": "MyCompany-ProductFlavor2Name/1.0",
+    "packageName": "com.yourpackage.productFlavor2",
+    "serviceAccountEmail": "youraccount2@developer.gserviceaccount.com",
+    "keyFile": "productFlavor2.p12"
+  }
+]
